@@ -1,0 +1,558 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: Sans-Pro-Black;
+    src: url(../fonts/SourceSansPro-Black.ttf);
+}
+
+@font-face {
+    font-family: Sans-Pro-Bold;
+    src: url(../fonts/SourceSansPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: Sans-Pro-Italic;
+    src: url(../fonts/SourceSansPro-Italic.ttf);
+}
+
+@font-face {
+    font-family: Sans-Pro-Light;
+    src: url(../fonts/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+    font-family: Sans-Pro-Regular;
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: Sans-Semi-Bold;
+    src: url(../fonts/SourceSansPro-Semibold.ttf);
+}
+
+header {
+    background-image: url(../images/altumcode-RrFvYtCwO8E-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    filter: gray saturate(0%) brightness(70%) contrast(1000%);
+}
+
+header .logo i {
+    font-size: 50px;
+    color: #fff;
+    opacity: 0.8;
+}
+
+header .logo {
+    padding: 125px 0 0 200px;
+}
+
+header .starter {
+    padding: 250px 0 0 200px;
+}
+
+header .starter h1 {
+    font-size: 50px;
+    font-family: "Sans-Pro-Bold";
+    color: #fff;
+}
+
+header .starter h4 {
+    font-size: 25px;
+    font-family: "Sans-Semi-bold";
+    color: #fff;
+}
+
+.desc {
+    background: rgb(16 15 15);
+    padding: 100px 0 100px 0;
+}
+
+.desc .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 30px;
+    padding: 0 40px 0 40px;
+}
+
+.desc .row .col {
+    flex-basis: 50%;
+}
+
+.desc .row .col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn {
+    padding: 20px 0 0 0;
+}
+
+.btn button {
+    padding: 10px;
+    border: 1px solid transparent;
+    background: grey;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.btn a {
+    color: #fff;
+}
+
+.btn button::after {
+    content: " > ";
+    color: #fff;
+}
+
+.btn button:hover {
+    border: 2px solid rgb(172, 84, 172);
+    transition: 0.3 all linear;
+}
+
+.desc .row .col h1 {
+    font-size: 40px;
+    font-family: "Sans-Pro-Bold";
+    color: #fff;
+}
+
+.desc .row .col h3 {
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 20px;
+}
+
+.service {
+    background: rgb(16 15 15);
+    padding: 150px 50px;
+}
+
+.service .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 50px;
+}
+
+.service .row:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.service .row:nth-child(1) .col {
+    flex-basis: 50%;
+    text-align: start;
+}
+
+.service .row:nth-child(1) .col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service .row:nth-child(1) .col h1 {
+    font-size: 35px;
+    font-family: "Sans-Pro-Bold";
+    color: #fff;
+}
+
+.service .row:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 40px 0 0 0;
+}
+
+.service .row:nth-child(2) .col {
+    flex-basis: 33%;
+}
+
+.service .row:nth-child(2) .col h2 {
+    font-size: 30px;
+    font-family: "Sans-Pro-Bold";
+    color: #fff;
+}
+
+.service #choosed {
+    color: white;
+}
+
+.service .row:nth-child(2) .col h2 {
+    font-size: 25px;
+    font-family: "Sans-Pro-Bold";
+    color: #fff;
+}
+
+.service .row:nth-child(2) .col h2:nth-child(1)::before {
+    content: " 01 ";
+    color: rgb(78, 78, 78);
+    font-size: 38px;
+    font-family: "Sans-Pro-Bold";
+}
+
+.service .row:nth-child(2) .col h2:nth-child(2)::before {
+    content: " 02 ";
+    color: rgb(78, 78, 78);
+    font-size: 38px;
+    font-family: "Sans-Pro-Bold";
+}
+
+.service .row:nth-child(2) .col h2:nth-child(3)::before {
+    content: " 03 ";
+    color: rgb(78, 78, 78);
+    font-size: 38px;
+    font-family: "Sans-Pro-Bold";
+}
+
+.service .row:nth-child(2) .col h4 {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.service .row:nth-child(2) .col h1 {
+    font-size: 32px;
+    font-family: "Sans-Pro-Bold";
+    color: #fff;
+}
+
+.client {
+    padding: 100px 50px 100px 50px;
+    background-color: rgb(189, 189, 189);
+}
+
+.client h1 {
+    font-size: 50px;
+    font-family: "Sans-Pro-Bold";
+    color: #fff;
+}
+
+.client h5 {
+    font-size: 22px;
+    font-family: "Sans-Pro-Regular";
+    color: #fff;
+}
+
+.client .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 20px;
+    padding: 25px 0 0 0;
+}
+
+.client .row .col {
+    flex-basis: 33%;
+}
+
+.client .row .col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client .row .col h3 {
+    font-size: 33px;
+    font-family: sans-serif;
+    background-color: rgb(41, 41, 41);
+    color: #fff;
+}
+
+.quote {
+    background: rgb(16 15 15);
+    padding: 250px;
+    text-align: center;
+}
+
+.quote h1 {
+    font-size: 55px;
+    font-family: "Sans-Pro-Bold";
+    color: #fff;
+}
+
+.quote h4 {
+    font-size: 34px;
+    font-family: "Sans-Pro-Italic";
+    color: #fff;
+}
+
+.work {
+    background: rgb(16 15 15);
+    padding: 100px 50px 100px 50px;
+}
+
+.work .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 50px;
+}
+
+.work .flex .row:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: start;
+}
+
+.work .flex .row:nth-child(1) .col {
+    flex-basis: 50%;
+}
+
+.work .flex .row:nth-child(1) .col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work .flex .row:nth-child(1) .col h1 {
+    font-size: 33px;
+    font-family: "Sans-Pro-Bold";
+    color: #fff;
+}
+
+.work .flex .row:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 80px 0 0 0;
+}
+
+.work .flex .row:nth-child(2) .col {
+    flex-basis: 33%;
+    text-align: start;
+}
+
+.work .flex .row:nth-child(2) .col h2 {
+    font-size: 25px;
+    font-family: "Sans-Pro-Italic";
+    color: rgb(118, 118, 118);
+}
+
+.work .flex .row:nth-child(2) .col h4 {
+    font-size: 22px;
+    font-family: "Sans-Pro-Italic";
+    color: #fff;
+}
+
+.work .flex .row:nth-child(2) .col i {
+    font-size: 25px;
+    color: rgb(118, 118, 118);
+    padding: 0 0 0 10px;
+}
+
+footer {
+    background-color: rgb(8 8 8);
+    padding: 40px;
+    border-top: 1px solid #181818;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 25px;
+}
+
+footer .row .col {
+    flex-basis: 33%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 20px;
+    place-content: center;
+    font-size: 18px;
+    font-family: "Sans-Pro-Black";
+    color: #fff;
+    place-self: center;
+}
+
+footer .row .col h4 {
+    align-self: center;
+}
+
+footer .row .col h4:first-child {
+    color: rgb(113, 21, 48);
+    font-size: 23px;
+}
+
+footer .row .col .info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+footer .row .col .info li {
+    margin: 5px auto;
+    font-size: 18px;
+}
+
+footer .row .col .info li a {
+    color: #fff;
+}
+
+footer .row .col .info li .important {
+    color: rgb(113, 21, 48);
+}
+
+footer .row .col i {
+    color: #fff;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    header .starter {
+        padding: 150px 0 0 100px;
+    }
+    header .logo {
+        padding: 125px 0 0 100px;
+    }
+    .desc {
+        padding: 0;
+    }
+    .desc .row {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .service {
+        padding: 0;
+    }
+    .service .flex {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .client {
+        padding: 0;
+    }
+    .client h1,
+    h5 {
+        padding: 20px;
+    }
+    .client .row {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        row-gap: 20px;
+    }
+    .quote {
+        padding: 50px;
+    }
+    .work {
+        padding: 0;
+    }
+    .work .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    .work .flex .row:nth-child(1) .col h1 {
+        text-align: center;
+    }
+    .work .flex .row:nth-child(2) .col {
+        text-align: center;
+        padding: 10px 0 10px 0;
+    }
+    footer {
+        padding: 0;
+    }
+    footer .row {
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 15px 0 15px 0;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:800px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .desc {
+        padding: 50px 0 50px 0;
+    }
+    .service {
+        padding: 50px 10px 50px 10px
+    }
+    .service .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    .client {
+        padding: 50px 10px 50px 10px;
+    }
+    .quote {
+        padding: 20px 0 20px 0;
+    }
+    footer {
+        padding: 40px 0 40px 0;
+    }
+    footer .row {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+@media only screen and (min-width:801px) and (max-width:1240px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .quote {
+        padding: 100px;
+    }
+}
+
+@media only screen and (min-width:1241px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+}

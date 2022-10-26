@@ -1,0 +1,578 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    overflow: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Sans-Pro-Black;
+    src: url(../fonts/SourceSansPro-Black.ttf);
+}
+
+@font-face {
+    font-family: Sans-Pro-Bold;
+    src: url(../fonts/SourceSansPro-Bold.ttf);
+}
+
+@font-face {
+    font-family: Sans-Pro-Italic;
+    src: url(../fonts/SourceSansPro-Italic.ttf);
+}
+
+@font-face {
+    font-family: Sans-Pro-Light;
+    src: url(../fonts/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+    font-family: Sans-Pro-Regular;
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: Sans-Semi-Bold;
+    src: url(../fonts/SourceSansPro-Semibold.ttf);
+}
+
+header {
+    background: rgb(17, 17, 17);
+}
+
+header video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+header .center {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    animation: change 1s infinite linear;
+    animation-duration: 5s;
+}
+
+header .center h3 {
+    font-size: 35px;
+    color: #fff;
+    font-family: "Sans-Pro-Bold";
+}
+
+header .left i {
+    font-size: 45px;
+    color: #fff;
+    cursor: pointer;
+}
+
+header .left {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    animation: spin 2s;
+    animation-duration: 2s;
+}
+
+.sign-up {
+    padding: 100px;
+    background-color: rgb(16 15 15);
+}
+
+.sign-up .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.sign-up .row .col {
+    flex-basis: 50%;
+    color: white;
+    font-family: sans-serif;
+}
+
+.sign-up .row .col h2 {
+    font-size: 25px;
+    padding: 10px 0 10px 0;
+    font-family: sans-serif;
+}
+
+.sign-up .row .col:last-child h2 {
+    color: rgb(185, 97, 193);
+}
+
+.sign-up .row .col video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sign-up .row .col:last-child {
+    text-align: start;
+    padding: 0 0 0 25px;
+}
+
+.sign-up .row .col input {
+    border: 0;
+    box-shadow: 0 3px 0 rgb(221, 221, 221);
+    padding: 10px;
+    width: 100%;
+    background: none;
+    margin: 10px auto;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Sans-Pro-Italic";
+}
+
+.sign-up .row .col label {
+    font-size: 22px;
+    font-family: "Sans-Pro-Bold";
+}
+
+.login {
+    padding: 100px;
+    background-color: rgb(16 15 15);
+}
+
+.login .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.login .row .col {
+    flex-basis: 50%;
+    color: #fff;
+}
+
+.login .row .col video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.login .row .col input {
+    border: 0;
+    box-shadow: 0 3px 0 rgb(221, 221, 221);
+    padding: 10px;
+    width: 95%;
+    background: none;
+    margin: 10px auto;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Sans-Pro-Italic";
+}
+
+.login .row .col label {
+    font-size: 22px;
+    font-family: "Sans-Pro-Bold";
+}
+
+.login .row .col h2 {
+    padding: 10px 0 10px 0;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: rgb(185, 97, 193);
+}
+
+.login .row .col .btn button {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #181818;
+    border: 1px solid rgb(117, 117, 117);
+    cursor: pointer;
+}
+
+.login .row .col .btn button:hover {
+    border: 1px solid rgb(185, 97, 193);
+    transition: 0.1s all linear;
+}
+
+.login .row .col .btn {
+    padding: 20px 0 0 0;
+}
+
+.quote {
+    padding: 100px;
+    background-color: rgb(16 15 15);
+    color: #fff;
+    font-family: "Sans-Pro-Bold";
+    text-align: center;
+    align-items: center;
+}
+
+.quote h3 {
+    font-size: 40px;
+}
+
+.verify {
+    padding: 50px;
+    background-color: rgb(16 15 15);
+}
+
+.verify .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.verify .row .col {
+    flex-basis: 33%;
+    color: #fff;
+}
+
+.verify .row .col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.verify .row .col h3 {
+    margin: 10px 0 10px 0;
+    font-family: sans-serif;
+}
+
+.verify .row .col h4 {
+    margin: 10px 0 10px 0;
+}
+
+.verify h2 {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    color: rgb(185, 97, 193);
+    font-family: "Sans-Pro-Bold";
+    font-size: 30px;
+}
+
+.verify .row .col h3 {
+    font-size: 26px;
+}
+
+.verify .row .col h4 {
+    font-size: 20px;
+}
+
+.tour video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.end {
+    padding: 100px;
+    background-color: rgb(16 15 15);
+}
+
+.end .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 25px;
+}
+
+.end .row .col {
+    flex-basis: 33%;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    color: #fff;
+}
+
+.end .row .col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.end h2 {
+    font-size: 35px;
+    font-family: "Sans-Pro-Bold";
+    color: rgb(185, 97, 193);
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.end .row .col h2 {
+    font-size: 27px;
+    color: #fff;
+    font-family: sans;
+}
+
+.end .row .col h4 {
+    font-size: 20px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+footer {
+    background-color: rgb(8 8 8);
+    padding: 40px;
+    border-top: 1px solid #181818;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 25px;
+}
+
+footer .row .col {
+    flex-basis: 33%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 20px;
+    place-content: center;
+    font-size: 18px;
+    font-family: "Sans-Pro-Black";
+    color: #fff;
+    place-self: center;
+}
+
+footer .row .col h4 {
+    align-self: center;
+}
+
+footer .row .col h4:first-child {
+    color: rgb(113, 21, 48);
+    font-size: 23px;
+}
+
+footer .row .col .info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+footer .row .col .info li {
+    margin: 5px auto;
+    font-size: 18px;
+}
+
+footer .row .col .info li a {
+    color: #fff;
+}
+
+footer .row .col .info li .important {
+    color: rgb(113, 21, 48);
+}
+
+footer .row .col i {
+    color: #fff;
+    font-size: 20px;
+}
+
+@keyframes change {
+    0% {
+        background-color: rgb(255, 113, 113);
+    }
+    25% {
+        background-color: rgb(87, 164, 252);
+    }
+    50% {
+        background-color: rgb(84, 192, 114);
+    }
+    75% {
+        background-color: rgb(10, 129, 129);
+    }
+    100% {
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(60deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width:600px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    header .center h3 {
+        text-align: center;
+    }
+    .sign-up {
+        padding: 0;
+    }
+    .sign-up .row {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        row-gap: 20px;
+    }
+    .sign-up .row .col:last-child {
+        padding: 0;
+    }
+    .login {
+        padding: 0;
+    }
+    .login .row {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        row-gap: 20px;
+    }
+    .login .row .col {
+        text-align: start;
+    }
+    .quote {
+        padding: 25px 0 25px 0;
+    }
+    .verify {
+        padding: 20px;
+    }
+    .verify .row {
+        flex-direction: column;
+        text-align: center;
+        row-gap: 20px;
+    }
+    .end {
+        padding: 0;
+    }
+    .end .row {
+        flex-direction: column;
+        text-align: center;
+        row-gap: 20px;
+    }
+    footer {
+        padding: 0;
+    }
+    footer .row {
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 15px 0 15px 0;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:800px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .sign-up {
+        padding: 20px;
+    }
+    .sign-up .row {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .sign-up .row .col:last-child {
+        padding: 0;
+    }
+    .sign-up .row .col input {
+        width: 95%;
+    }
+    .login {
+        padding: 20px;
+    }
+    .login .row {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .verify {
+        padding: 20px;
+    }
+    .verify .row {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    footer {
+        padding: 40px 0 40px 0;
+    }
+    footer .row {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+@media only screen and (min-width:801px) and (max-width:1240px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .sign-up {
+        padding: 20px;
+    }
+    .sign-up .row {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .sign-up .row .col:last-child {
+        padding: 0;
+    }
+    .sign-up .row .col input {
+        width: 95%;
+    }
+    .login {
+        padding: 20px;
+    }
+    .login .row {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+@media only screen and (min-width:1241px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+}
